@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Question Bank</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Wallpoet&display=swap" rel="stylesheet">
+        <style>
+        input,textarea{
+          width: 50%;
+          
+          margin-left: -12%;
+          box-sizing: border-box;
+        }</style>
+      
+    </head>
+  <body onload="getStoredQuestions(),checkLogin()" style="font-family: 'Hind Siliguri', sans-serif;">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid" style="background-color: rgb(36, 23, 48);font-family: 'Wallpoet', cursive;">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Question Bank</a>
+                  </div>
+                  <ul class="nav navbar-nav" style="background-color: rgb(29, 14, 43);">
+                    <li class="active"><a href="#">Home</a></li>
+                      
+                  <ul class="nav navbar-nav navbar-right">
+                  </ul>
+                </div>
+              </nav>
+              
+      <br><br><br>
+      
+        <br>
+       <a href="#" class="btn btn-info" role="button" id="aAddQuestion" style="inline-size: 200px; margin-left: 40%; background-color: rgb(29, 14, 43);border: white;">Add Question</a>   
+        <div id="divAddQuestion" style="margin-left: 40%; font-family: 'Hind Siliguri', sans-serif;">
+        </div>  
+        <br>
+        <br>
+        <div>
+        <h3 style="font-size: 30px; margin-left: 35%; color: rgb(29, 14, 43);font-family: 'Hind Siliguri', sans-serif;"><u>List of Question added </u></h3>
+        </div>
+        <div id="divListQuestions" style="margin-left: 10%; font-family: 'Hind Siliguri', sans-serif;">
+        </div><br>
+        <a href="question.html" class="btn btn-danger" role="button" style="inline-size: 200px; margin-left: 40%; background-color: rgb(29, 14, 43) ;border: white;">View User Interface</a>
+      <br><br> <br> <br>
+      </body>
+        <script src="script.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  
+    </html>

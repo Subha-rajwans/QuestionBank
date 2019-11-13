@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Question Bank</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Wallpoet&display=swap" rel="stylesheet">
+
+  </head>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" style="background-color: rgb(36, 23, 48);font-family: 'Wallpoet', cursive;">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">Question Bank</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="signup.html" id="name" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="login.html" id="logout"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<br><br><br>
+
+  <body onload="getSessionQuestions(),getStoredQuestions(),getCartQuestions()">
+    <div id="Show" style="float:right; margin-right:15px;">
+    </div>
+    <h2 style="margin-left: 46%; margin-right: 50%; font-family: 'Hind Siliguri', sans-serif; text-decoration: underline; color: rgb(29, 14, 43)"> Questions </h2>
+    <div id="showListQuestions" style="font-family: 'Hind Siliguri', sans-serif; margin-left: 10%;">
+    </div>
+
+    <button  class="btn btn-info" role="button" onclick="back()" style="margin-left: 80%; background-color: rgb(29, 14, 43);border: white;">Back</button>
+    <button class="btn btn-info" role="button" onclick="next()" style=" background-color: rgb(29, 14, 43);border: white;" >Next</button>  
+  
+    <br><br>
+    <button class="btn btn-success" role="button" id="CheckOut"  style="inline-size: 200px; margin-left: 44%; margin-right: 50%; margin-bottom: 3%; background-color: rgb(29, 14, 43);border: white;" onclick="check()">Proceed To Cart</button>
+  
+  </body>
+    <script src="question.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  
+    </html>

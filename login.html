@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>Grocery Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Wallpoet&display=swap" rel="stylesheet">
+
+
+  <style>
+
+h2 {text-align:center;}
+p {text-align:center;}
+
+
+button {
+  background-color: rgb(29, 14, 43);
+  border: white;
+  color: white;
+  padding: 10px 22px;
+  width:110px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input{
+  width: 34%;
+  padding: 10px 10px;
+  
+  box-sizing: border-box;
+}
+
+
+</style>
+  </head>
+  <body onload="getStoredProducts();">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" style="background-color: rgb(36, 23, 48);font-family: 'Wallpoet', cursive;">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Grocery Store</a>
+      </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="signup.html" id="name" style="text-decoration-color: white;"> Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<br><br><br>
+
+  <h1 align="center" style=" font-family: 'Hind Siliguri', sans-serif; text-decoration: underline;">Login Details</h1>
+  <br>
+  <br>
+  
+  <form style="align-content: right; margin-left: 25% ;">
+  <h4>Username</h4>
+  <input id="username" name="username" type="text" placeholder="username" class="form-control" style="width: 50%;" >
+  <br>
+  <h4>Password</h4>
+  <input id="password" name="password" type="password" placeholder="password" class="form-control" style="width: 50%;">
+  <br>
+  <br>
+  <br>
+  </form>
+<script src="login.js" type="text/javascript"></script>
+<button id="login" class="btn btn-success" role="button" onclick="login()" style="margin-left:39%; background-color: rgb(29, 14, 43);border: white;">Login</button>
+<button id="signup" class="btn btn-success" role="button" onclick="signup()" style="margin-left:3%; background-color: rgb(29, 14, 43);border: white;">Sign Up</button>
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  
+</html>

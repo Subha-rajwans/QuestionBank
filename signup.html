@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>Grocery Store</title>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Wallpoet&display=swap" rel="stylesheet">
+
+  <style>
+
+p {text-align:center;}
+
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input{
+  width: 34%;
+  padding: 10px 10px;
+  
+  box-sizing: border-box;
+}
+
+</style>
+  </head>
+
+  
+  <body onload="getStoredProducts();">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" style="background-color: rgb(36, 23, 48);font-family: 'Wallpoet', cursive;">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">Grocery Store</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+           <li><a href="login.html" id="logout">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<br><br><br>
+
+  <h1 align="center" style=" font-family: 'Hind Siliguri', sans-serif; text-decoration: underline;">Signup Details</h1>
+  <br>
+  <form action="/login.html" method="post" style="align-content: right; margin-left: 25% ;">
+  <h4>Name</h4>
+  <input id="name" name="name" type="text" placeholder="Enter Name" class="form-control" style="width: 50%;" >
+  
+  
+  <h4>Username</h4>
+  <input id="Username" id="username" type="text" placeholder="Pick a Username" class="form-control" style="width: 50%;">
+ 
+  
+  <h4>Email</h4>
+  
+  <input id="email" type="email"  name="email" placeholder="Email Address" class="form-control" style="width: 50%;">
+  
+  
+  <h4>Password</h4>
+  <input id="Password" type="password" name=" password" placeholder="Password" class="form-control" style="width: 50%;">
+  
+  
+  <br>
+    </form>
+  <button class="btn btn-success" role="button" id="signup" style="margin-left:50%; background-color: rgb(29, 14, 43);border: white;" onclick="signup()">Sign Up</button>
+
+  </body>
+  <script src="signup.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  
+</html>
